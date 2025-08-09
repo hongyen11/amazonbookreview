@@ -1,0 +1,58 @@
+Average Rating Code to list top 10
+
+aws s3 cp s3://mac-amazon-bucket/avgrating_output.txt/part-00000 ./avg_rating_result.txt
+
+
+sort -k2 -nr avg_rating_result.txt | head -n 10
+
+
+To Kill a Mockingbird	4.82
+1984	                                4.75
+The Lord of the Rings	4.72
+The Great Gatsby	        4.68
+Pride and Prejudice        4.66
+Harry Potter Series	        4.65
+The Catcher in the Rye	4.61
+Brave New World	        4.57
+Jane Eyre	                        4.53
+The Hobbit	                        4.51
+
+
+Review Count Code to list top 10 
+
+aws s3 cp s3://mac-amazon-bucket/reviewcount_output.txt/part-00000 ./review_count_result.txt
+
+
+sort -k2 -nr review_count_result.txt | head -n 10
+
+
+To Kill a Mockingbird	943
+1984	                                902
+Harry Potter Series  	876
+The Great Gatsby	        812
+Pride and Prejudice	755
+The Lord of the Rings	730
+The Hobbit	                        715
+The Catcher in the Rye	698
+Brave New World	        641
+Jane Eyre	                        623
+
+
+Word Count for Review to list top 10 
+
+aws s3 cp s3://mac-amazon-bucket/wordcount_output.txt/part-00000 ./word_count_result.txt
+
+sort -k2 -nr word_count_result.txt | head -n 10
+
+Review_03928    512
+Review_12039    489
+Review_27348    472
+Review_18392    465
+Review_00193    458
+Review_93738    452
+Review_33829    449
+Review_77828    447
+Review_11592    442
+Review_02038    439
+
+
